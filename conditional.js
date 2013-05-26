@@ -36,7 +36,7 @@ if (Meteor.isClient) {
 if (Meteor.isServer) {
   Meteor.startup(function () {
     // code to run on server at startup
-    var result = Meteor.http.get('http://search.twitter.com/search.json', {params: {q: 'measles', geocode: '51.5171,0.1062,1mi'}});
-    console.log(result);
+    //var result = Meteor.http.get('http://search.twitter.com/search.json', {params: {q: 'measles', geocode: '51.5171,0.1062,1mi'}});
+    //console.log(result);
   });
 }
