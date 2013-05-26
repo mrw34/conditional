@@ -131,17 +131,137 @@
 <template name="main">
     <!-- Example row of columns -->
     <div class="row-fluid">
-      <div class="span4 well" style="background-color: #E9FFE1">
-        <h2>News</h2>
-        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+      <div class="span4"><!-- style="background-color: #F3F8F3"-->
+        <h2 style="text-align: center">News</h2>
+        <div class="well">
+          <div class="pull-right"><a href="#"><i class="icon-remove"></i></a></div>
+          <h4>Headlines</h4>
+          {{>headlines}}
+        </div>
+        <div class="well">
+          <div class="pull-right"><a href="#"><i class="icon-remove"></i></a></div>
+          <h4 style="margin-bottom: 0">Trends</h4>
+          {{>trends}}
+        </div>
+        <div class="well">
+          <div class="pull-right"><a href="#"><i class="icon-remove"></i></a></div>
+          <h4>Literature</h4>
+          {{>literature}}
+        </div>
+        <div class="well">
+          <div class="pull-right"><a href="#"><i class="icon-remove"></i></a></div>
+          <h4>Social media</h4>
+          {{>twitter}}
+        </div>
       </div>
-      <div class="span4 well" style="background-color: #FFFEE4">
-        <h2>Information</h2>
-        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+      <div class="span4">
+        <h2 style="text-align: center">Diagnosis</h2>
+        <div class="well" style="background-color: #FFFEE4">
+          <div class="pull-right"><a href="#"><i class="icon-remove"></i></a></div>
+          <h4>Summary</h4>
+          {{>summary}}
+        </div>
+        <div class="well" style="background-color: #FFFEE4">
+          <div class="pull-right"><a href="#"><i class="icon-remove"></i></a></div>
+          <h4>Support</h4>
+          {{>support}}
+        </div>
+        <div class="well" style="background-color: #FFFEE4">
+          <div class="pull-right"><a href="#"><i class="icon-remove"></i></a></div>
+          <h4>Reference</h4>
+          {{>reference}}
+        </div>
+        <div class="well" style="background-color: #FFFEE4">
+          <div class="pull-right"><a href="#"><i class="icon-remove"></i></a></div>
+          <h4>Images</h4>
+          {{>images}}
+        </div>
      </div>
-      <div class="span4 well" style="background-color: #F3F8F3">
-        <h2>Treatment</h2>
-        <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p>
+      <div class="span4">
+        <h2 style="text-align: center">Treatment</h2>
+        <div class="well" style="background-color: #E9FFE1">
+          <div class="pull-right"><a href="#"><i class="icon-remove"></i></a></div>
+          <h4>Medicine</h4>
+          {{>medicine}}
+        </div>
+        <div class="well" style="background-color: #E9FFE1">
+          <div class="pull-right"><a href="#"><i class="icon-remove"></i></a></div>
+          <h4>Public health</h4>
+          Annual Report of the CMO: <a href="https://dl.dropboxusercontent.com/u/1120779/NHSHackDay/measles.pdf">Measles (p.44)</a>
+          <br><br>
+          <img src="https://dl.dropboxusercontent.com/u/1120779/NHSHackDay/measles.png" class="img-rounded">
+        </div>
+        <div class="well" style="background-color: #E9FFE1">
+          <div class="pull-right"><a href="#"><i class="icon-remove"></i></a></div>
+          <h4>Clinical trials</h4>
+          {{>trials}}
+        </div>
       </div>
     </div>
+</template>
+
+<template name="headlines">
+  <ul>
+    <li><span class="label label-info">New</span> Measles epidemic: Final drop-in MMR clinics held in Brecon and Newtown <a href="http://www.bbc.co.uk/news/uk-wales-22660530"><i class="icon-share"></i></a>
+    <li>Medical chief in measles warning <a href="http://www.bbc.co.uk/news/uk-wales-22660530"><i class="icon-share"></i></a>
+  </ul>
+</template>
+
+<template name="literature">
+  <ul>
+    <li>Rural School Employees' Status, Awareness, and Perceptions of Adult Vaccinations. <a href="http://www.ncbi.nlm.nih.gov/pubmed/23704368"><i class="icon-share"></i></a>
+    <li>Measles outbreak in the Lazio region of Italy: surveillance and impact on Emergency Departments and hospitalizations. <a href="http://www.ncbi.nlm.nih.gov/pubmed/23703304"><i class="icon-share"></i></a>
+    <li>Contagious comments: what was the online buzz about the 2011 quebec measles outbreak? <a href="http://www.ncbi.nlm.nih.gov/pubmed/23691152"><i class="icon-share"></i></a>
+  </ul>
+</template>
+
+<template name="trends">
+  <iframe src="http://www.google.com/trends/fetchComponent?q=coronavirus&cid=TIMESERIES_GRAPH_0&export=5&w=256" frameborder="0" height="350"></iframe>
+</template>
+
+<template name="twitter">
+  <ul>
+    <li><span class="label label-info">Local</span> <a href="https://twitter.com/MubasherLucman">Mubasher Lucman</a>: Measles update in Punjab. total reported cases 1476 cases despite vaccination 445 unvaccinated 1031 deaths 67…total mismanagement by govt <a href="https://twitter.com/MubasherLucman/status/338174050092326912"><i class="icon-share"></i></a>
+    <li><span class="label label-info">Local</span> <a href="https://twitter.com/LindaSilmalis">Linda Silmalis</a>: WHO: Measles remains one of the leading causes of death in children globally #SBSONE #jabbed <a href="https://twitter.com/LindaSilmalis/status/338612647761149953"><i class="icon-share"></i></a>
+  </ul>
+</template>
+
+<template name="summary">
+  Measles is an infectious disease caused by a virus. It spreads easily from person to person. The main symptom of measles is an itchy skin rash. The rash often starts on the head and moves down the body. <a href="http://en.wikipedia.org/wiki/Measles"><i class="icon-share"></i></a>
+</template>
+
+<template name="images">
+  <a href="http://en.wikipedia.org/wiki/File:Morbillivirus_measles_infection.jpg"><img src="http://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Morbillivirus_measles_infection.jpg/320px-Morbillivirus_measles_infection.jpg" class="img-rounded"></a>
+</template>
+
+<template name="trials">
+  <ul>
+    <li><span class="label label-info">Local</span> Evaluation of Long-term Safety and Effectiveness of Fostamatinib in the Treatment of Rheumatoid Arthritis (RA) <a href="http://www.trialreach.com/study/evaluation-of-long-term-safety-and-effectiveness-of-fostamatinib-in-the-treatment-of-rheumatoid-arthritis-ra/85198/"><i class="icon-share"></i></a>
+    <li>Certolizumab Pegol in Subjects With Adult Onset Active and Progressive Psoriatic Arthritis <a href="http://www.trialreach.com/study/certolizumab-pegol-in-subjects-with-adult-onset-active-and-progressive-psoriatic-arthritis/101775/"><i class="icon-share"></i></a>
+  </ul>
+</template>
+
+<template name="support">
+  <ul>
+    <li>Arthritis Research UK <a href="http://www.arthritisresearchuk.org/"><i class="icon-share"></i></a>
+    <li><span class="label label-info">Local</span> Arthritis Self-help Network <a href="http://www.arthritis-selfhelp.org/content/about-us"><i class="icon-share"></i></a>
+  </ul>
+</template>
+
+<template name="reference">
+  &nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.nlm.nih.gov/medlineplus/measles.html"><img src="https://dl.dropboxusercontent.com/u/1120779/NHSHackDay/medline.png" class="img-rounded" width="100"></a>
+  &nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.hpa.org.uk/Topics/InfectiousDiseases/InfectionsAZ/Measles/"><img src="https://dl.dropboxusercontent.com/u/1120779/NHSHackDay/hpa.png" class="img-rounded" width="100"></a>
+  <br><br>
+  &nbsp;&nbsp;&nbsp;&nbsp;<a href="http://cks.nice.org.uk/measles#!topicsummary"><img src="https://dl.dropboxusercontent.com/u/1120779/NHSHackDay/nice.png" class="img-rounded" width="100"></a>
+  &nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.who.int/topics/measles/en/"><img src="https://dl.dropboxusercontent.com/u/1120779/NHSHackDay/who.png" class="img-rounded" width="100"></a>
+</template>
+
+<template name="medicine">
+  <ul>
+    <li>NICE Pathways <a href="http://pathways.nice.org.uk/pathways/acute-upper-gastrointestinal-bleeding"><i class="icon-share"></i></a>
+    <li>Shared Decision Making <a href="http://sdm.rightcare.nhs.uk/pda/acne/"><i class="icon-share"></i></a>
+    <li>NHS Symptoms Checker <a href="http://www.nhs.uk/NHSdirect/pages/symptoms.aspx?sat=Confusion"><i class="icon-share"></i></a>
+    <li><span class="label label-info">Local</span> NHS Services near you <a href="http://www.nhs.uk/Service-Search/Disambiguation/Location?serviceName=Arthritis&locationName=SW11%202QY&distance=25"><i class="icon-share"></i></a>
+    <li>NHS Health Explorer <a href="http://www.nhs.uk/Search/Pages/HealthExplorer.aspx?q=Back%20pain"><i class="icon-share"></i></a>
+  </ul>
 </template>
