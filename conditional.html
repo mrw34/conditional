@@ -82,6 +82,18 @@
   <!--[if lt IE 9]>
     <script src="../assets/js/html5shiv.js"></script>
   <![endif]-->
+
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-37791910-4']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
 </head>
 
 <body>
@@ -93,7 +105,7 @@
     <!-- Jumbotron -->
     <div class="jumbotron">
       <h1>Conditional</h1>
-      <p class="lead">All your diseases in one place (with updates!). An <a href="http://nhshackday.com/">NHS Hack Day</a> project.</p>
+      <p class="lead">Real-time, localised information about common medical conditions.<br>An <a href="http://nhshackday.com/">NHS Hack Day</a> project.</p>
       <h2 class="muted">Select a condition above to get started</h2>
       <!--a class="btn btn-large btn-success" href="#">Get started today</a-->
     </div>
@@ -216,7 +228,7 @@
 </template>
 
 <template name="trends">
-  <iframe src="http://www.google.com/trends/fetchComponent?q=coronavirus&cid=TIMESERIES_GRAPH_0&export=5&w=256" frameborder="0" height="350"></iframe>
+  <iframe src="http://www.google.com/trends/fetchComponent?q=measles&cid=TIMESERIES_GRAPH_0&export=5&w=256" frameborder="0" height="350"></iframe>
 </template>
 
 <template name="twitter">
