@@ -2,7 +2,7 @@
   <meta charset="utf-8">
   <title>Conditional</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Conditional: Everything about common diseases in one place (with updates!)">
+  <meta name="description" content="Conditional: Up-to-date information about medical conditions, with links to local services and support">
   <link href="http://markwoodbridge.com" title="Mark Woodbridge" rel="author"/>
 
   <!-- Le styles -->
@@ -105,9 +105,9 @@
     <!-- Jumbotron -->
     <div class="jumbotron">
       <h1>Conditional</h1>
-      <p class="lead">Real-time, localised information about common medical conditions.<br>An <a href="http://nhshackday.com/">NHS Hack Day</a> project.</p>
-      <h2 class="muted">Select a condition above to get started</h2>
-      <!--a class="btn btn-large btn-success" href="#">Get started today</a-->
+      <p class="lead">Up-to-date information about medical conditions, with links to local services and support</p>
+      <h3 class="muted">Select a condition above to get started</h3>
+      <p style="margin-top: 2em">An <a href="http://nhshackday.com/">NHS Hack Day</a> project. Comments or suggestions? Please email <a href="mailto:help@conditional.io">help@conditional.io</a></p>
     </div>
     {{else}}
 
@@ -201,7 +201,7 @@
           <h4>Public health</h4>
           Annual Report of the CMO: <a href="https://dl.dropboxusercontent.com/u/1120779/NHSHackDay/measles.pdf">Measles (p.44)</a>
           <br><br>
-          <img src="https://dl.dropboxusercontent.com/u/1120779/NHSHackDay/measles.png" class="img-rounded">
+          <img src="https://dl.dropboxusercontent.com/u/1120779/NHSHackDay/measles.png" class="img-rounded" alt="cmo">
         </div>
         <div class="well" style="background-color: #E9FFE1">
           <div class="pull-right"><a href="#"><i class="icon-remove"></i></a></div>
@@ -228,7 +228,7 @@
 </template>
 
 <template name="trends">
-  <iframe src="http://www.google.com/trends/fetchComponent?q=measles&cid=TIMESERIES_GRAPH_0&export=5&w=256" frameborder="0" height="350"></iframe>
+  <iframe src="http://www.google.com/trends/fetchComponent?q=measles&cid=TIMESERIES_GRAPH_0&export=5&w=256" height="350" style="border: 0"></iframe>
 </template>
 
 <template name="twitter">
@@ -243,7 +243,7 @@
 </template>
 
 <template name="images">
-  <a href="http://en.wikipedia.org/wiki/File:Morbillivirus_measles_infection.jpg"><img src="http://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Morbillivirus_measles_infection.jpg/320px-Morbillivirus_measles_infection.jpg" class="img-rounded"></a>
+  <a href="http://en.wikipedia.org/wiki/File:Morbillivirus_measles_infection.jpg"><img src="http://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Morbillivirus_measles_infection.jpg/320px-Morbillivirus_measles_infection.jpg" class="img-rounded" alt="measles"></a>
 </template>
 
 <template name="trials">
@@ -261,11 +261,11 @@
 </template>
 
 <template name="reference">
-  &nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.nlm.nih.gov/medlineplus/measles.html"><img src="https://dl.dropboxusercontent.com/u/1120779/NHSHackDay/medline.png" class="img-rounded" width="100"></a>
-  &nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.hpa.org.uk/Topics/InfectiousDiseases/InfectionsAZ/Measles/"><img src="https://dl.dropboxusercontent.com/u/1120779/NHSHackDay/hpa.png" class="img-rounded" width="100"></a>
+  &nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.nlm.nih.gov/medlineplus/measles.html"><img src="https://dl.dropboxusercontent.com/u/1120779/NHSHackDay/medline.png" class="img-rounded" width="100" alt="medline"></a>
+  &nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.hpa.org.uk/Topics/InfectiousDiseases/InfectionsAZ/Measles/"><img src="https://dl.dropboxusercontent.com/u/1120779/NHSHackDay/hpa.png" class="img-rounded" width="100" alt="hpa"></a>
   <br><br>
-  &nbsp;&nbsp;&nbsp;&nbsp;<a href="http://cks.nice.org.uk/measles#!topicsummary"><img src="https://dl.dropboxusercontent.com/u/1120779/NHSHackDay/nice.png" class="img-rounded" width="100"></a>
-  &nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.who.int/topics/measles/en/"><img src="https://dl.dropboxusercontent.com/u/1120779/NHSHackDay/who.png" class="img-rounded" width="100"></a>
+  &nbsp;&nbsp;&nbsp;&nbsp;<a href="http://cks.nice.org.uk/measles#!topicsummary"><img src="https://dl.dropboxusercontent.com/u/1120779/NHSHackDay/nice.png" class="img-rounded" width="100" alt="nice"></a>
+  &nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.who.int/topics/measles/en/"><img src="https://dl.dropboxusercontent.com/u/1120779/NHSHackDay/who.png" class="img-rounded" width="100" alt="who"></a>
 </template>
 
 <template name="medicine">
